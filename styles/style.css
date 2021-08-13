@@ -75,6 +75,31 @@
   right: 0;
 }
 
+.two-columns {
+  display: flex;
+}
+
+
+
+.brief {
+  color: #2F80ED;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
