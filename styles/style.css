@@ -6,7 +6,7 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .header {
@@ -52,7 +52,7 @@
 }
 
 .header__link {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .header__main-illustration {
@@ -67,7 +67,7 @@
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   position: absolute;
-  background-color: #2F80ED;
+  background-color: #2f80ed;
   height: 568px;
   width: 568px;
   top: 64px;
@@ -95,7 +95,7 @@
 }
 
 .two-columns__brief {
-  color: #2F80ED;
+  color: #2f80ed;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -234,7 +234,8 @@
   overflow: hidden;
 }
 
-.section-title_theme_dark, .section-subtitle_theme_dark {
+.section-title_theme_dark,
+.section-subtitle_theme_dark {
   color: white;
   z-index: 2;
 }
