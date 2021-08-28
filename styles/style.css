@@ -1,3 +1,12 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -16,6 +25,7 @@
   min-height: 600px;
   max-height: 756px;
   display: flex;
+  overflow: hidden;
   /* выше установили ограничения для секции */
 }
 
@@ -73,6 +83,7 @@
   width: 568px;
   top: 64px;
   right: 0;
+  animation: rotation 20s linear infinite;
 }
 
 .content {
@@ -129,6 +140,92 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
+}
+
+.techniques {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  width: 920px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards__item {
+  width: 240px;
+  margin-right: 100px;
+}
+
+.cards__item:nth-of-type(3) {
+  margin: 0;
+}
+
+.cards__item:nth-of-type(5) {
+  margin: 0;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  border-radius: 100px;
+  margin: 60px 40px 43px 40px;
+}
+
+.cards__title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cards__description {
+  margin: 16px 0px 0px 0px;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.video__iframes {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50px;
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+}
+
+.video__iframe:nth-of-type(1) {
+  margin-right: 20px;
+}
+
+.oakley {
+  display: flex;
+  justify-content: center;
+  padding-top: 160px;
+  background-color: #f2f2f2;
 }
 
 .digits {
