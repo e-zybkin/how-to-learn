@@ -7,6 +7,14 @@
   }
 }
 
+a {
+  transition: opacity 0.25s linear;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
 .rotation {
   animation: rotation 20s linear infinite;
 }
@@ -371,12 +379,14 @@
 
 .khan__book-container {
   display: flex;
+  height: 608px;
 
 }
 
 .khan__book-pic {
   width: 620px;
-  height: 608px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .khan__buy-link {
